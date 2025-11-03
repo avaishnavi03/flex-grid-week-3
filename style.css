@@ -1,0 +1,52 @@
+body {
+  font-family: Arial;
+  background-color: rgb(60, 142, 60);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: rgb(86, 121, 86);
+}
+
+main{
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 15px;
+   padding: 20px;
+}
+.project {
+  background-color: white;
+  margin: 10px;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  main {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (min-width: 901px) {
+  main {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
